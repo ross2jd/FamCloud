@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Fam Cloud</title>
+    <style>
+        body {
+            background-color: #CFD8E1;
+        }
+        #pageTitle {
+            font-family: cursive;
+            font-size: larger;
+            font-weight: 500;
+            color: #1c4587;
+            margin-left: 0.1%;
+            margin-top: 5px;
+            margin-right: auto;
+            width: 49%;
+        }
+        #signIn {
+            font-family: cursive;
+            font-size: medium;
+            font-style: italic;
+            color: #000000;
+            margin-left: auto;
+            margin-right: 0.1%;
+            margin-top: 5px;
+            width: 49%;
+            text-align: right;
+        }
+        #pageHeaderTable {
+            width: 100%;
+            margin-bottom: 3%;
+        }
+        .tile {
+            border: 2px solid;
+            text-align: center;
+            font-family: cursive;
+            font-size: larger;
+            width: 150px;
+            height: 150px;
+            border-radius: 25px;
+        }
+        #musicTile {
+            background: #FF9933;
+            box-shadow: 10px 10px 5px #663D14;
+        }
+        #videoTile {
+            background: #B80000;
+            box-shadow: 10px 10px 5px #660000;
+        }
+        
+        #photoTile {
+            background: #33CC33;
+            box-shadow: 10px 10px 5px #1C6E1C;
+        }
+        #todoTile {
+            background: #3366FF;
+            box-shadow: 10px 10px 5px #2447B2;
+        }
+        #fileTile {
+            background: #CC0066;
+            box-shadow: 10px 10px 5px #660033;
+        }
+        #settingTile {
+            background: #8E8E8E;
+            box-shadow: 10px 10px 5px #636363;
+        }
+        .spacingTile {
+            width: 125px;
+            height: 150px;
+        }
+        .spacingRow {
+            height: 50px;
+        }
+        #tileTable {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer {
+            margin-top: 50px;
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="pageHeaderTable">
+        <tr>
+            <td><div id="pageTitle">FamCloud</div></td>
+            <td><div id="signIn">Sign In</div></td>
+        </tr>
+    </table>
+    <!--
+    Home Page Layout
+    
+    |--------------- -------------------------------------|
+    |                                                     |
+    |    |-------|         |-------|        |-------|     |
+    |    |       |         |       |        |       |     |
+    |    |       |         |       |        |       |     |
+    |    |-------|         |-------|        |-------|     |
+    |                                                     |
+    |                                                     |
+    |    |-------|         |-------|        |-------|     |
+    |    |       |         |       |        |       |     |
+    |    |       |         |       |        |       |     |
+    |    |-------|         |-------|        |-------|     |
+    |                                                     |
+    |-----------------------------------------------------|
+    -->
+    <table id="tileTable">
+        <tr>
+            <td class="tile" id="musicTile"><div>Music Player</div></td>
+            <td class="spacingTile"></td>
+            <td class="tile" id="videoTile"><div>Video Player</div></td>
+            <td class="spacingTile"></td>
+            <td class="tile" id="photoTile"><div>Photos</div></td>
+        </tr>
+        <tr>
+            <td class="spacingRow"></td>
+        </tr>
+        <tr>
+            <td class="tile" id="todoTile"><div>To-Do</div></td>
+            <td class="spacingTile"></td>
+            <td class="tile" id="fileTile"><div>File Cabinet</div></td>
+            <td class="spacingTile"></td>
+            <td class="tile" id="settingTile"><div>Settings</div></td>
+        </tr>
+    </table>
+    
+    <!--Footer-->
+    <div class="footer">
+        <hr style="width: 75%"/>
+        FamCloud &copy; 2014, Jordan Ross
+    </div>
+</body>
+</html>
