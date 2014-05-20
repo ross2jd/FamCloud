@@ -9,7 +9,7 @@
             			$(this).jPlayer("setMedia", {
             				title: "Rite Of Spring ",
             				mp3: "/media/famcloud_media/Music/A/Angels & Airwaves/I-Empire/11 Rite Of Spring.mp3"
-            			}).jPlayer("play"); // Have it start playing as soon as its ready.
+            			});//.jPlayer("play"); // Have it start playing as soon as its ready.
             		},
             		swfPath: "js",
             		supplied: "mp3",
@@ -18,6 +18,9 @@
             		keyEnabled: true,
             		remainingDuration: true,
             		toggleDuration: true
+            });
+            $(".playSelSong").dblclick( function() {
+              $("#jquery_jplayer_1").jPlayer("play"); // Begins playing 42 seconds into the media.
             });
         });
       </script>
@@ -64,4 +67,9 @@
       </div>
     </div>
   </div>
+  
+  <table>
+      <tr><th>Artist</th><th>Song</th></tr>
+      <tr class="playSelSong"><td>Angles & Airwaves</td><td>Rite of Spring</td></tr>
+  </table>
 </body>
