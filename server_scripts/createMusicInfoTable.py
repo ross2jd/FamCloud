@@ -4,7 +4,7 @@ from mutagen.m4a import M4A
 from mutagen.mp3 import MP3
 import MySQLdb
  
-topdir = "/media/famcloud_media/Music"
+topdir = "/media/famcloud_media/iTunes Music"
 
 def seconds_to_min_sec( secs ):
   "Return a minutes:seconds string representation of the given number of seconds."
